@@ -1,4 +1,10 @@
 /** TOP BAR **/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+html, body {
+    font-family: Inter;
+}
+
 .topbar {
     background: var(--theme-primary-700);
     height: 3rem;
@@ -11,6 +17,7 @@
 .topbar .contact-info {
     color: #fff;
 }
+
 .topbar .contact-info a,
 .topbar .contact-info span {
     padding-left: 5px;
@@ -44,11 +51,13 @@ header {
     top: 0;
     z-index: 1;
 }
+
 nav {
     background: var(--theme-primary-500);
 }
+
 nav .logo {
-    height: 6rem;
+    height: 4rem;
 }
 
 @media (max-width: 991.98px) {
@@ -62,10 +71,11 @@ nav .logo {
         padding-left: 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: #343a40;
+        background-color: var(--theme-primary-300);
         transition: transform .3s ease-in-out, visibility .3s ease-in-out;
         z-index: 1;
     }
+
     .offcanvas-collapse.open {
         visibility: visible;
         transform: translateX(-100%);
@@ -91,6 +101,7 @@ nav .nav-link {
     position: relative;
     font-size: 20px;
 }
+
 nav .nav-link:hover:before {
     content: "";
     position: absolute;
@@ -116,7 +127,7 @@ nav .nav-scroller .active {
 }
 
 
-main  {
+main {
     position: sticky;
     top: 0;
 }
@@ -129,7 +140,7 @@ main .banner {
 }
 
 main .banner .text-bg-dark {
-    background: RGBA(33,37,41,0.9)!important;
+    background: RGBA(33, 37, 41, 0.9) !important;
 }
 
 /* Footer */
