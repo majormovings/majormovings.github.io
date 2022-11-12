@@ -21,33 +21,108 @@ var page = {
 <%- include('../_components/_header.ejs') %>
 
 <main>
-    <div class="banner  py-4">
+    <div class="jumbotron pt-5">
         <div class="container">
-            <div class="row align-items-md-stretch">
-                <div class="col-md-6">
-                    <div class="h-100 p-5 text-bg-dark rounded-3">
-                        <h2>Welcome to Soldier Strong Moving</h2>
-                        <p>Hire Movers in Lubbock Texas, Today</p>
-                        <button class="btn btn-primary" type="button">Get Moving</button>
-                    </div>
-                </div>
+            <h1 class="display-3">Residential Moving</h1>
+            <p>No matter if you are moving into your first home, growing your family home, moving closer to someone
+                special or any of the thousands of other reasons, <b>we want to make the transition as smooth as
+                    possible.</b></p>
+
+            <p>We understand that your home is a special place filled with the things you love. That is why we go above
+                and beyond to make sure everything is transported safely.</p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <%- include('../_components/_get_quotes.ejs') %>
             </div>
         </div>
 
     </div>
-
-
     <% var accordionData = {
         id: "acc1",
         items: [
             {
-                title: " Accordion Item #2",
-                content: `<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-     `
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+            },
+            {
+                title: "How much does Soldier Strong Moving's insurance cover?",
+                content: `<p>At Soldier Strong Moving, LLC we offer $20,000 in cargo insurance & $300,000 in general liability insurance on every move we perform services on. However, we have had a few customers in the past express concern on not being insured up to the amount comfortable in their minds for the given items we are moving and relocating. If that’s the case, we have two companies we work with that can extend additional valuation coverage. Simply let us know and we will work out anything related to those concerns prior to beginning the moving process!</p>`
+            },
+            {
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+            },
+            {
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+            },
+            {
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+            },
+            {
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+            },
+            {
+                title: "What kind of pricing do you offer?",
+                content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
             }
         ]
     } %>
-    <%- include('../_components/_accordion.ejs', {data: accordionData}) %>
+    <div class="container q-and-a py-5">
+        <div class="accordion" id="<%= accordionData.id %>">
+
+            <% accordionData.items.forEach((item, index) => {  %>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<%= accordionData.id %>_<%= index %>" aria-expanded="false" aria-controls="<%= accordionData.id %>_<%= index %>">
+                            <%= item.title %>
+                        </button>
+                    </h2>
+                    <div id="<%= accordionData.id %>_<%= index %>" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#<%= accordionData.id %>">
+                        <div class="accordion-body">
+                            <%- item.content %>
+                        </div>
+                    </div>
+                </div>
+
+            <% }) %>
+
+
+        </div>
+    </div>
+
 
     <%- include('../_components/_footer.ejs') %>
 </main>

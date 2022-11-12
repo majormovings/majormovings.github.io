@@ -1,0 +1,67 @@
+<div class="card" style="background: #f5f5f5">
+    <div class="card-body">
+        <h3 class="card-title">Get Quote</h3>
+        <h6 class="card-subtitle mb-2 text-muted">Your Next Move Starts With a Quote</h6>
+        <form class="needs-validation" novalidate="">
+
+            <div class="mb-3">
+                <label for="firstName">Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="999-999-9999">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="your@example.com" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="from-address">From Address</label>
+                <textarea type="text" class="form-control" id="from-address" placeholder="1234 Main St" required=""></textarea>
+                <div class="invalid-feedback">
+                    Please enter your shipping address.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="to-address">To Address</label>
+                <textarea type="text" class="form-control" id="to-address" placeholder="1234 Main St" required=""></textarea>
+            </div>
+
+
+            <hr class="mb-4">
+
+            <div class="mb-3">
+                <label for="state">Type of service</label>
+                <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>Apartment Move</option>
+                    <option>House Move</option>
+                    <option>Business Move</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="card">
+
+</div>

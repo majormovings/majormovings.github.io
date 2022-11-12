@@ -149,3 +149,8 @@ main {
 .footer {
     background: var(--bs-gray-200);
 }
+.footer .social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
