@@ -11,9 +11,13 @@ services:
     link: /services/residential-moving.html
   - name: Packaging & Unpacking
     link: /services/residential-moving.html
-  - name: Residential Moving
+  - name: Long Distance Moving
     link: /services/residential-moving.html
-  - name: Residential Moving
+  - name: Self Storage
     link: /services/residential-moving.html
-  - name: Residential Moving
+  - name: Labor Only
+    link: /services/residential-moving.html
+  - name: Specialty Moving
+    link: /services/residential-moving.html
+  - name: Apartment Moving
     link: /services/residential-moving.html

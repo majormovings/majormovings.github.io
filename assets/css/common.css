@@ -5,6 +5,7 @@ html, body {
     font-family: Inter;
 }
 
+
 .topbar {
     background: var(--color-primary-900);
     height: 3rem;
@@ -50,6 +51,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.anchor {
+    text-decoration: none;
+    color: inherit;
+    padding-top: 7rem; /*Height of header */
 }
 
 nav {
@@ -140,5 +147,5 @@ main {
 
 /* Footer */
 .footer {
-    background: var(--color-primary-100);
+    background: var(--bs-gray-200);
 }

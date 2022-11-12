@@ -121,7 +121,7 @@ var page = {
     <div id="services-section" class="services  py-5">
         <div class="container">
             <div class="header">
-                <h2>Our Services</h2>
+                <h2><a class="anchor" name="services-anchor">Our Services</a></h2>
                 <p>We specialize in performing solutions at</p>
             </div>
             <div class="content">
@@ -182,20 +182,55 @@ var page = {
         </div>
     </div>
 
-    <style>
 
+    <style>
+        #why-us-section .icon-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 8rem;
+        }
+        #why-us-section .icon-container .bi{
+            margin: auto;
+        }
     </style>
 
     <div id="why-us-section" class="py-5">
+
         <div class="container">
             <div class="header">
-                <h2>Why US?</h2>
+                <h2><a class="anchor" name="why-us-anchor">Why US?</a></h2>
                 <p>We specialize in performing solutions at</p>
             </div>
             <div class="content">
-
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="icon-container">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3>Complimentary Disassemble and Assemble Service</h3>
+                        <p>From reconnecting your washer/dryer to reassembling a bedroom suit we will take care of anything and everything no matter the service!</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="icon-container">
+                            <i class="bi bi-calculator"></i>
+                        </div>
+                        <h3>Free Estimaes</h3>
+                        <p>We always offer our customers free estimates on all local, long-distance, or business and find the best moving option for not only ease of mind…but your budget as well. </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <div class="icon-container">
+                            <i class="bi bi-currency-dollar"></i>
+                        </div>
+                        <h3>Cost Effective</h3>
+                        <p>We provide flat-rate maximum estimates and do not require up front deposits or fees. Rest assured… you will not pay for our services until you’re 100% satisfied</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <%- include('/_components/_footer.ejs') %>
