@@ -1,10 +1,15 @@
 :root {
-    --theme-primary: #131E3F;
-    --theme-primary-100: #D3DFF5;
+    --color-primary: #03045e;
+    --color-secondary: #ffb703;
+
+    --theme-primary-100: #C7C7F6;
     --theme-primary-200: #A9BFEB;
     --theme-primary-300: #728BC5;
-    --theme-primary-400: #42568B;
-    --theme-primary-500: #131E3F;
-    --theme-primary-600: #0D1636;
-    --theme-primary-700: #09102D;
+    --theme-primary-400: #2B2C9E;
+
+    --theme-primary-500: #03045e;
+
+    --theme-primary-700: #010243;
+    --theme-primary-800: #000136;
+    --theme-primary-900: #00002D;
 }

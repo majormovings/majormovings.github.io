@@ -1,0 +1,21 @@
+<div class="accordion" id="<%= locals.data.id %>">
+
+<% locals.data.items.forEach((item, index) => {  %>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<%= locals.data.id %>_<%= index %>" aria-expanded="false" aria-controls="<%= locals.data.id %>_<%= index %>">
+                    <%= item.title %>
+                </button>
+            </h2>
+            <div id="<%= locals.data.id %>_<%= index %>" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#<%= locals.data.id %>">
+                <div class="accordion-body">
+                    <%- item.content %>
+                </div>
+            </div>
+        </div>
+
+<% }) %>
+
+
+</div>

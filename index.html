@@ -1,26 +1,35 @@
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Jumbotron example · Bootstrap v5.2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.104.2">
+<title>Major Movers · Home</title>
+<link rel="canonical" href="https://getbootstrap.com/node_modules/bootstrap/examples/jumbotron/"/>
+<!-- Favicons -->
+<link rel="icon" href="favicon.ico">
 
-    <link rel="canonical" href="https://getbootstrap.com/node_modules/bootstrap/examples/jumbotron/"/>
-
-
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/css/bootstrap/css/styles.css" rel="stylesheet"/>
     <link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-
-    <!-- Favicons -->
-    <link rel="icon" href="favicon.ico">
-
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/assets/css/variables.css" rel="stylesheet"/>
     <link href="/assets/css/common.css" rel="stylesheet"/>
+
+    <style>
+        main .banner {
+            height: 30rem;
+            display: flex;
+            align-items: center;
+            background-image: url("/assets/images/banner.jpg");
+            background-position: center;
+        }
+
+        main .banner .text-bg-dark {
+            background: RGBA(33, 37, 41, 0.9) !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,20 +37,24 @@
 <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center"><span class="bi bi-envelope d-flex align-items-center"><a
-                href="mailto:SSMovingtransport@gmail.com">ssmovingtransport@gmail.com</a></span> <span
-                class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:8067812447" target="_blank">(806) 781-2447</a></span>
+                        href="mailto:jwarren_1930@cloud.com">jwarren_1930@cloud.com</a></span> <span
+                    class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:8064961183"
+                                                                          target="_blank">(806) 496-1183</a></span>
         </div>
         <div class="social-links d-none d-md-flex align-items-center"><a href="#" class="twitter"><i
-                class="bi bi-twitter"></i></a> <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
-                href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a href="#" class="linkedin"><i
-                class="bi bi-linkedin"></i></a></div>
+                        class="bi bi-twitter"></i></a> <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a
+                    href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a href="#" class="linkedin"><i
+                        class="bi bi-linkedin"></i></a></div>
     </div>
 </section>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="/#"><img src="https://pngimage.net/wp-content/uploads/2018/06/vector-logo-png-3.png" class="logo"> Company Name</a>
+            <a class="navbar-brand" href="/#"><img
+                        src="/assets/images/logo.png"
+                        class="logo"></a>
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,18 +63,32 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"
+                           aria-current="page"
+                                
+                           href="/#">Home</a>
                     </li>
                     <li class="nav-item dropdown" id="service-toggle">
-                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="false">Services</a>
+                        <a class="nav-link dropdown-toggle  "
+                            href="#" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="/services/residential-moving.html">Residential Moving</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Residential Moving</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Commercial Moving</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Packaging &amp; Unpacking</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Residential Moving</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Residential Moving</a></li>
+                            
+                                <li><a class="dropdown-item" href="/services/residential-moving.html">Residential Moving</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html#">Contact</a>
+                        <a class="btn btn-danger" href="tel:8064961183">Call (806) 496-1183</a>
                     </li>
 
                 </ul>
@@ -71,94 +98,171 @@
 </header>
 
 
+
 <main>
     <div class="banner  py-4">
         <div class="container">
             <div class="row align-items-md-stretch">
-                <div class="col-md-6">
+                <div class="col-md-6 offset-md-6">
                     <div class="h-100 p-5 text-bg-dark rounded-3">
-                        <h2>Welcome to Soldier Strong Moving</h2>
+                        <h2>Welcome to Major Movers</h2>
                         <p>Hire Movers in Lubbock Texas, Today</p>
                         <button class="btn btn-primary" type="button">Get Moving</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div class="container footer">
-        <footer class="py-5">
-            <div class="row">
-                <div class="col-md-5 mb-3">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-6 offset-md-1 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
+    <style>
+        .services .content {
+            display: flex;
+            gap: 1rem;
+            flex: auto;
+            flex-wrap: wrap;
+        }
+        .services .card.residential-moving .card-img-top{
+            padding: 0 3rem;
+        }
+        .services .card.commercial-moving .card-img-top{
+            padding: 0 2.75rem;
+        }
+        .services .card.packing-unpacking .card-img-top{
+          /*  height: 12rem;*/
+        }
+        .services .card {
+            width: 18rem;
+        }
+        @media only screen and (max-width: 600px) {
+            .services .card {
+               width: 100%;
+           }
+        }
+    </style>
+    <div class="services  py-4">
+        <div class="container">
+            <div class="header">
+                <h2>Our Services</h2>
+                <p>We specialize in performing solutions at</p>
+            </div>
+            <div class="content">
+                <div class="card residential-moving">
+                    <img class="card-img-top" src="/assets/images/residential-moving.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">RESIDENTIAL MOVING</h5>
+                        <p class="card-text">We portray 360 degree customized solutions for Residential moving services to our dedicated customers.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
                 </div>
 
+                <div class="card commercial-moving"">
+                    <img class="card-img-top" src="/assets/images/commercial-movers.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">COMMERCIAL MOVING</h5>
+                        <p class="card-text">We are experienced in moving businesses and commercial grade equipment.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
 
+                <div class="card packing-unpacking">
+                    <img class="card-img-top" src="/assets/images/Box-Packaging.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PACKAGING & UNPACKING</h5>
+                        <p class="card-text">We are experienced in moving businesses and commercial grade equipment.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="card residential-moving">
+                    <img class="card-img-top" src="/assets/images/residential-moving.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Moving</h5>
+                        <p class="card-text">We are experienced in moving businesses and commercial grade equipment.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="card residential-moving">
+                    <img class="card-img-top" src="/assets/images/residential-moving.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Moving</h5>
+                        <p class="card-text">We are experienced in moving businesses and commercial grade equipment.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="card residential-moving">
+                    <img class="card-img-top" src="/assets/images/residential-moving.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Moving</h5>
+                        <p class="card-text">We are experienced in moving businesses and commercial grade equipment.</p>
+                        <a href="/services/residential-moving.html" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<div class="footer pt-5">
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-5 mb-3">
+                <form>
+                    <h5> Have a Question?</h5>
+                    <p>Call Customer Service:  <a href="tel:8064961183">(806) 496-1183</a></p>
+                    <p class="fw-bold">Open 7AM-6PM Everyday</p>
+                    <p>13405 County Road 1600 Suite#34, Wolfforth, TX 79382</p>
+                </form>
+            </div>
+            <div class="col-6 offset-md-1 col-md-2 mb-3">
+                <h5>Services</h5>
+                <ul class="nav flex-column">
+                    
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Residential Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Commercial Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Packaging &amp; Unpacking</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Residential Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Residential Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Residential Moving</a></li>
+                     
+                </ul>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2022 Soldier Strong Moving. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#">
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+            <p>&copy; 2022 Major Movers. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#">
                         <svg class="bi" width="24" height="24">
                             <use xlink:href="#twitter"/>
                         </svg>
                     </a></li>
-                    <li class="ms-3"><a class="link-dark" href="#">
+                <li class="ms-3"><a class="link-dark" href="#">
                         <svg class="bi" width="24" height="24">
                             <use xlink:href="#instagram"/>
                         </svg>
                     </a></li>
-                    <li class="ms-3"><a class="link-dark" href="#">
+                <li class="ms-3"><a class="link-dark" href="#">
                         <svg class="bi" width="24" height="24">
                             <use xlink:href="#facebook"/>
                         </svg>
                     </a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+
 </main>
 
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
