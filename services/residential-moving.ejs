@@ -1,0 +1,58 @@
+<%
+var page = {
+    navType: 'service',
+    title: "Residential Moving"
+};
+%>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('../_components/_meta.ejs') %>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="/assets/css/variables.css" rel="stylesheet"/>
+    <link href="/assets/css/common.css" rel="stylesheet"/>
+</head>
+<body>
+
+<%- include('../_components/_topbar.ejs') %>
+<%- include('../_components/_header.ejs') %>
+
+<main>
+    <div class="banner  py-4">
+        <div class="container">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark rounded-3">
+                        <h2>Welcome to Soldier Strong Moving</h2>
+                        <p>Hire Movers in Lubbock Texas, Today</p>
+                        <button class="btn btn-primary" type="button">Get Moving</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <% var accordionData = {
+        id: "acc1",
+        items: [
+            {
+                title: " Accordion Item #2",
+                content: `<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+     `
+            }
+        ]
+    } %>
+    <%- include('../_components/_accordion.ejs', {data: accordionData}) %>
+
+    <%- include('../_components/_footer.ejs') %>
+</main>
+
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/scripts/main.js"></script>
+</body>
+</html>
