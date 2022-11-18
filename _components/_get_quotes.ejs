@@ -2,53 +2,48 @@
     <div class="card-body">
         <h3 class="card-title">Get Quote</h3>
         <h6 class="card-subtitle mb-2 text-muted">Your Next Move Starts With a Quote</h6>
-        <form class="needs-validation" novalidate="">
+        <form class="quote-form needs-validation" action="mailto:<%= root.config.email%>" novalidate="" method="post" enctype="text/plain">
 
             <div class="mb-3">
-                <label for="firstName">Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <label for="q-name">Name</label>
+                <input type="text" class="form-control" id="q-name" name="name" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid first name is required.
                 </div>
             </div>
+
             <div class="mb-3">
-                <label for="phone">Phone</label>
-                <input type="text" class="form-control" id="phone" placeholder="999-999-9999">
+                <label for="q-phone">Phone</label>
+                <input type="text" class="form-control" id="q-phone" name="phone" placeholder="999-999-9999" required>
                 <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Please enter a valid phone number.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="email">Email</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="your@example.com" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
+                <label for="q-email">Email</label>
+                <input type="email" class="form-control" id="q-email" name="email" placeholder="your@example.com" required>
                 <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Please enter a valid email address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="from-address">From Address</label>
-                <textarea type="text" class="form-control" id="from-address" placeholder="1234 Main St" required=""></textarea>
+                <label for="q-from-address">From Address</label>
+                <textarea type="text" class="form-control" id="q-from-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
                 <div class="invalid-feedback">
                     Please enter your shipping address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="to-address">To Address</label>
-                <textarea type="text" class="form-control" id="to-address" placeholder="1234 Main St" required=""></textarea>
+                <label for="q-to-address">To Address</label>
+                <textarea type="text" class="form-control" id="q-to-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
             </div>
 
-
-            <hr class="mb-4">
-
             <div class="mb-3">
-                <label for="state">Type of service</label>
-                <select class="form-select" id="state" required="">
+                <label for="q-service">Type of service</label>
+                <select class="form-select" id="q-service" name="service" required="">
                     <option value="">Choose...</option>
                     <option>Apartment Move</option>
                     <option>House Move</option>
@@ -62,3 +57,24 @@
         </form>
     </div>
 </div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.querySelectorAll('.needs-validation');
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        form.classList.add('was-validated')
+                    }
+                }, false)
+            })
+    })()
+</script>

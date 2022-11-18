@@ -96,53 +96,48 @@
     <div class="card-body">
         <h3 class="card-title">Get Quote</h3>
         <h6 class="card-subtitle mb-2 text-muted">Your Next Move Starts With a Quote</h6>
-        <form class="needs-validation" novalidate="">
+        <form class="quote-form needs-validation" action="mailto:jwarren_1930@cloud.com" novalidate="" method="post" enctype="text/plain">
 
             <div class="mb-3">
-                <label for="firstName">Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <label for="q-name">Name</label>
+                <input type="text" class="form-control" id="q-name" name="name" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid first name is required.
                 </div>
             </div>
+
             <div class="mb-3">
-                <label for="phone">Phone</label>
-                <input type="text" class="form-control" id="phone" placeholder="999-999-9999">
+                <label for="q-phone">Phone</label>
+                <input type="text" class="form-control" id="q-phone" name="phone" placeholder="999-999-9999" required>
                 <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Please enter a valid phone number.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="email">Email</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="your@example.com" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
+                <label for="q-email">Email</label>
+                <input type="email" class="form-control" id="q-email" name="email" placeholder="your@example.com" required>
                 <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Please enter a valid email address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="from-address">From Address</label>
-                <textarea type="text" class="form-control" id="from-address" placeholder="1234 Main St" required=""></textarea>
+                <label for="q-from-address">From Address</label>
+                <textarea type="text" class="form-control" id="q-from-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
                 <div class="invalid-feedback">
                     Please enter your shipping address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="to-address">To Address</label>
-                <textarea type="text" class="form-control" id="to-address" placeholder="1234 Main St" required=""></textarea>
+                <label for="q-to-address">To Address</label>
+                <textarea type="text" class="form-control" id="q-to-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
             </div>
 
-
-            <hr class="mb-4">
-
             <div class="mb-3">
-                <label for="state">Type of service</label>
-                <select class="form-select" id="state" required="">
+                <label for="q-service">Type of service</label>
+                <select class="form-select" id="q-service" name="service" required="">
                     <option value="">Choose...</option>
                     <option>Apartment Move</option>
                     <option>House Move</option>
@@ -156,63 +151,86 @@
         </form>
     </div>
 </div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.querySelectorAll('.needs-validation');
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        form.classList.add('was-validated')
+                    }
+                }, false)
+            })
+    })()
+</script>
             </div>
         </div>
 
     </div>
 
-    <footer class="container footer py-5">
-
+    
+<div class="footer pt-5">
+    <footer class="container">
         <div class="row">
             <div class="col-md-5 mb-3">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
+                    <h5>Have a Question?</h5>
+                    <p>Call Customer Service:  <a href="tel:8064961183">(806) 496-1183</a></p>
+                    <p class="fw-bold">Open 7AM-6PM Everyday</p>
+                    <p>1615 Corpus Ave Wolfforth, Texas 79382</p>
                 </form>
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
             </div>
             <div class="col-6 offset-md-1 col-md-2 mb-3">
-                <h5>Section</h5>
+                <h5>Main links</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    <li class="nav-item mb-2"><a href="/index.html#services-anchor" class="nav-link p-0 text-muted">Services</a></li>
+                    <li class="nav-item mb-2"><a href="/index.html#why-us-anchor" class="nav-link p-0 text-muted">Why US?</a></li>
+                    <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0 text-muted">Contact</a></li>
                 </ul>
             </div>
-
             <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
+                <h5>Services</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Residential Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Commercial Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Packaging &amp; Unpacking</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Long Distance Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Self Storage</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Labor Only</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Specialty Moving</a></li>
+                     
+                        <li class="nav-item mb-2"><a href="/services/residential-moving.html" class="nav-link p-0 text-muted">Apartment Moving</a></li>
+                     
                 </ul>
             </div>
 
 
         </div>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2022 Soldier Strong Moving. All rights reserved.</p>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
+            <p>&copy; 2022 Major Movers. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-dark" href="#">
                         <svg class="bi" width="24" height="24">
@@ -232,6 +250,8 @@
             </ul>
         </div>
     </footer>
+</div>
+
 </main>
 
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
