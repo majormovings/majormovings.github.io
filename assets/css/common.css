@@ -5,6 +5,10 @@ html, body {
     font-family: Inter;
 }
 
+label.required:after {
+    content:"*";
+    color:red;
+}
 
 .topbar {
     background: var(--color-primary-900);
