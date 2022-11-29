@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.104.2">
-<title>Major Movers · Contact</title>
+<title>Major Movers · Contact us</title>
 <link rel="canonical" href="https://getbootstrap.com/node_modules/bootstrap/examples/jumbotron/"/>
 <!-- Favicons -->
 <link rel="icon" href="favicon.ico">
@@ -81,6 +81,123 @@
 
 
 <main>
+
+    <div class="jumbotron pt-5">
+        <div class="container">
+            <h1 class="display-3">Contact us</h1>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="address"><h4><i class="bi bi-geo-alt"></i> Location:</h4>
+                        <p>1615 Corpus Ave Wolfforth, Texas 79382</p></div>
+                    <div class="email"><h4><i class="bi bi-envelope"></i> Email:</h4>
+                        <p><a href="mailto:majormovers806@gmail.com">majormovers806@gmail.com</a></p></div>
+                    <div class="phone"><h4><i class="bi bi-phone"></i> Call:</h4>
+                        <p><a href="tel:8067732851">(806) 773-2851</a></p></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.337159878073!2d-102.00724618479957!3d33.49260408076195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fe743da0c378c5%3A0xa3ae6374a30f2f01!2s1615%20Corpus%20Ave%2C%20Wolfforth%2C%20TX%2079382%2C%20USA!5e0!3m2!1sen!2sin!4v1669723737749!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-7 mt-5 mt-lg-0">
+                    <div class="card" style="background: #f5f5f5">
+    <div class="card-body">
+        <h3 class="card-title">Get Quote</h3>
+        <h6 class="card-subtitle mb-2 text-muted">Your Next Move Starts With a Quote</h6>
+        <form class="quote-form needs-validation" action="mailto:majormovers806@gmail.com" novalidate="" method="post" enctype="text/plain">
+
+            <div class="mb-3">
+                <label for="q-name" class="required">Name</label>
+                <input type="text" class="form-control" id="q-name" name="name" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="q-phone" class="required">Phone</label>
+                <input type="text" class="form-control" id="q-phone" name="phone" required>
+                <div class="invalid-feedback">
+                    Please enter a valid phone number.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="q-email" class="required">Email</label>
+                <input type="email" class="form-control" id="q-email" name="email" placeholder="your@example.com" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="q-from-address" class="required">From Address</label>
+                <textarea type="text" class="form-control" id="q-from-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
+                <div class="invalid-feedback">
+                    Please enter From address.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="q-to-address" class="required">To Address</label>
+                <textarea type="text" class="form-control" id="q-to-address" name="to-address" placeholder="1234 Main St" required=""></textarea>
+                <div class="invalid-feedback">
+                    Please enter To address.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="q-service">Type of service</label>
+                <select class="form-select" id="q-service" name="service">
+                    <option value="">Choose...</option>
+                    
+                        <option>Residential Moving</option>
+                    
+                        <option>Commercial Moving</option>
+                    
+                        <option>Packaging &amp; Unpacking</option>
+                    
+                        <option>Specialty Moving</option>
+                    
+                </select>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.querySelectorAll('.needs-validation');
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        form.classList.add('was-validated')
+                    }
+                }, false)
+            })
+    })()
+</script>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+    </div>
+
 
     
 <div class="footer pt-5">
