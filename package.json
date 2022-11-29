@@ -6,7 +6,7 @@
     "build": "*"
   },
   "scripts": {
-    "build": "tinyjam .",
+    "build": "tinyjam src .",
     "watch": "npm run build && chokidar \"**/*.ejs\" -c \"npm run build\"",
     "server": "live-server",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
