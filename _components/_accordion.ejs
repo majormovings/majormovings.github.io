@@ -1,0 +1,60 @@
+<% var accordionData = {
+    id: "acc1",
+    items: [
+        {
+            title: "Why should I hire a company of packers and movers when moving from one home to another?",
+            content: `<p>It’s no secret that moving from one place to another, no matter, within a city or outside a city, can be a daunting, challenging and stressful event of life. In fact, moving process has been listed one of the top stressors in the world. The process of shifting involves packing up household items, loading the truck, transportation, unloading the truck, unpacking everything, and rearranging items.</p>
+<p>There can be several other tasks in the process of your move that you may have to deal with. Handling shifting process will call for a lot of your precious time and effort. To be very honest, you cannot manage the entire shifting process on your own.  Thus, it is imperative to hire a company of professional packers and movers that can take of all your relocation requirement. But, make sure to check the credibility, experience, license, reputation and genuineness of packers and movers before hiring the services.</p>`
+        },
+        {
+            title: "How much does Major Moving's insurance cover?",
+            content: `<p>At Major Moving we offer $20,000 in cargo insurance & $300,000 in general liability insurance on every move we perform services on. However, we have had a few customers in the past express concern on not being insured up to the amount comfortable in their minds for the given items we are moving and relocating. If that’s the case, we have two companies we work with that can extend additional valuation coverage. Simply let us know and we will work out anything related to those concerns prior to beginning the moving process!</p>`
+        },
+        {
+            title: "What are the benefits of hiring professional packers and movers on house moving?",
+            content: `<p>There are certain benefits of hiring a reliable company of professional packers and movers. If you plan your upcoming house moving with one of reliable and experienced movers and packers then you will have a complete peace of mind. You will be completely removed from all obligations of doing shifting tasks. Professionals will take care of all your needs. Not only will they pack your belongings correctly but also safely transport them to your new home. You will get full assistance from start to end. And hence, you will be able to save a lot of your time and effort. There is no need to sacrifice your precious time for doing shifting tasks. You can spend your saved time in doing other important tasks or spending with your family members and loved ones.</p>
+
+<p>Safety of belongings is another benefit of hiring packers and movers for house moving. Experts will handle your belongings with utmost care and ensure for safety in transit. Additionally, you will also get goods transit insurance if you are relocating from one city to another. Goods transit insurance will cover the loss caused be damaged to goods in transit. Thus, hiring a reliable company of movers and packers on house moving would be indeed a beneficial and sensible decision.</p>`
+        },
+        {
+            title: "What kind of pricing do you offer?",
+            content: `<p>Moving quotes are price estimates given to a customer who want to know a rough calculation of cost to shift from one pace to another. You can get free moving estimates online or over the phone. But it is recommended that you should not accept quotes over the phone calls only. It would be the best if estimate given to you is in written form. But written estimates can be given to you only after the seeing your belongings which you want to pack and move.</p>`
+        },
+        {
+            title: "What are moving quotes or estimates?",
+            content: `<p>Our prices have always been concrete. We offer flat-rate maximum estimates on all our moving services so you know what you pay up front.</p>
+
+<p>We want to be the most transparent moving company you and your family has ever worked with. We also offer several budget friendly options based on where you are financially with your move.</p>
+
+<p>Rest assured… you will not pay for our services until you’re 100% satisfied.</p>`
+        },
+        {
+            title: "I want to shift only a refrigerator? Can I still get quotes?",
+            content: `<p>Of course, why not? You can still get quotes but packers and movers companies may demand a minimum charge which might seem high when shifting only 1-2 items.
+
+</p>`
+        },
+        {
+            title: "I want to transport my car? Can I obtain quotes here?",
+            content: `<p>Of course! Our associated packers and movers will definitely help you transport your car from one place to another. Even they can transport your car using especially designed car carriers and trailers for safety.</p>`
+        }
+    ]
+} %>
+<div class="container q-and-a py-5">
+    <div class="accordion" id="<%= accordionData.id %>">
+        <% accordionData.items.forEach((item, index) => {  %>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<%= accordionData.id %>_<%= index %>" aria-expanded="false" aria-controls="<%= accordionData.id %>_<%= index %>">
+                        <%= item.title %>
+                    </button>
+                </h2>
+                <div id="<%= accordionData.id %>_<%= index %>" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#<%= accordionData.id %>">
+                    <div class="accordion-body">
+                        <%- item.content %>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>

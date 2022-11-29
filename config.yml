@@ -1,23 +1,15 @@
 title: Major Movers
 author: Shivaji Varma Pusapati Venkata
 link: https://majormovers.com
-email: jwarren_1930@cloud.com
-phone: 8064961183
+email: majormovers806@gmail.com
+phone: 8067732851
 address: 1615 Corpus Ave Wolfforth, Texas 79382
 services:
   - name: Residential Moving
     link: /services/residential-moving.html
   - name: Commercial Moving
-    link: /services/residential-moving.html
+    link: /services/commercial-moving.html
   - name: Packaging & Unpacking
-    link: /services/residential-moving.html
-  - name: Long Distance Moving
-    link: /services/residential-moving.html
-  - name: Self Storage
-    link: /services/residential-moving.html
-  - name: Labor Only
-    link: /services/residential-moving.html
+    link: /services/packaging-unpacking.html
   - name: Specialty Moving
-    link: /services/residential-moving.html
-  - name: Apartment Moving
-    link: /services/residential-moving.html
+    link: /services/specialty-moving.html
