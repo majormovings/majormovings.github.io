@@ -7,14 +7,16 @@
   },
   "scripts": {
     "build": "tinyjam src .",
-    "watch": "npm run build && chokidar \"**/*.ejs\" -c \"npm run build\"",
-    "server": "live-server"
+    "watch": "chokidar \"**/*.ejs\" -c \"npm run build\"",
+    "server": "live-server",
+    "sass": "node-sass -w assets/css/scss -o assets/css"
   },
   "author": "Shivaji Varma Pusapati Venkata",
   "license": "ISC",
   "dependencies": {
     "chokidar-cli": "^3.0.0",
-    "tinyjam": "^0.4.0",
-    "live-server": "^1.2.2"
+    "tinyjam": "https://github.com/shivajivarma/tinyjam",
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0"
   }
 }
