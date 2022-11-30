@@ -12,9 +12,8 @@ function formatPhoneNumber(phoneNumberString) {
 <header>
     <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="/#"><img
-                        src="/assets/images/logo.jpeg"
-                        class="logo"/> <span><%=root.config.title%></span></a>
+            <a class="navbar-brand" href="/#">
+                <img src="/assets/images/logo.jpeg" title="<%= root.config.title %> Logo" class="logo"/> <span><%=root.config.title%></span></a>
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +40,6 @@ function formatPhoneNumber(phoneNumberString) {
                     <li class="nav-item">
                         <a class="btn btn-danger" href="tel:<%= root.config.phone %>">Call <%= formatPhoneNumber(root.config.phone) %></a>
                     </li>
-
                 </ul>
             </div>
         </div>

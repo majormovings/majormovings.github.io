@@ -1,9 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description"
+      content="<%= root.config.title %> offer best packers and movers service, movers and packers, reliable packers and movers, Packers &amp; Movers, best movers and packers in Texas, agarwal packers and movers, packers, movers, packers &amp; movers, packing and moving tips.">
+<meta name=keywords
+      content="agarwal packers and movers, packers and movers, movers and packers, packers & movers, agarwal packers and movers, packers, movers, packers & movers, packers and movers services, packers movers, International packers and movers, packers and Movers india, packers and movers noida, agarwal relocation, agarwal packers, agarwal movers, packers and movers noida, packers and movers chennai, car transporation service, packers and movers company, packers and movers ahmedabad, expert packers and movers."/>
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.104.2">
-<title><%= root.config.title %> · <%= page.title %></title>
-<link rel="canonical" href="<%= root.config.baseUrl %>/<%=locals.destPath%>">
+<% if (page.navType == 'home') { %>
+<title><%= root.config.title %></title>
+<% } else { %>
+<title><%= page.title %> · <%= root.config.title %></title>
+<% } %>
+<link rel="canonical" href="<%= root.config.baseUrl %>/<%= locals.destPath %>">
 <!-- Favicons -->
 <link rel="icon" href="favicon.ico">
