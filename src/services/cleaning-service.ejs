@@ -1,0 +1,50 @@
+<%
+var page = {
+    navType: 'service',
+    title: "Cleaning Service"
+};
+%>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('../_components/_meta.ejs') %>
+
+    <link href="/assets/css/bootstrap/css/styles.css" rel="stylesheet"/>
+    <link href="/assets/css/bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="/assets/css/variables.css" rel="stylesheet"/>
+    <link href="/assets/css/common.css" rel="stylesheet"/>
+</head>
+<body>
+
+<%- include('../_components/_topbar.ejs') %>
+<%- include('../_components/_header.ejs') %>
+
+<main>
+    <div class="jumbotron pt-5">
+        <div class="container">
+            <h1 class="display-3"><%= page.title %></h1>
+            <div class="banner"></div>
+            <p>One of the crucial factors to consider while moving to a new place is deep cleaning the place to ensure a germ-free and healthy environment. For this purpose, you would require professional help. The cleaning services experts have access to all the essential tools useful for stripping the dirt from your stuff. This includes sofa cleaning, bathroom cleaning, kitchen cleaning for a sparkling and nice-smelling home.</p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <%- include('../_components/_get_quotes.ejs') %>
+            </div>
+        </div>
+
+    </div>
+
+    <%- include('../_components/_accordion.ejs') %>
+
+    <%- include('../_components/_footer.ejs') %>
+</main>
+
+<script src="/assets/css/bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/scripts/main.js"></script>
+</body>
+</html>

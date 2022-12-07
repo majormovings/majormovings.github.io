@@ -13,3 +13,5 @@ services:
     link: /services/packaging-unpacking.html
   - name: Specialty Moving
     link: /services/specialty-moving.html
+  - name: Cleaning Service
+    link: /services/cleaning-service.html
