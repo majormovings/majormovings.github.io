@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Disallow: /no-search/
-Sitemap: Major Movings/sitemap.xml
+Sitemap: https://majormovings.com/sitemap.xml
